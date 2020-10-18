@@ -27,7 +27,6 @@ Vue.component('example', require('./components/ExampleComponent.vue').default);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-const app = new Vue({
-    // el: '#app',
-    el: '#app',
-});
+// const app = new Vue({
+//     el: '#app',
+// });

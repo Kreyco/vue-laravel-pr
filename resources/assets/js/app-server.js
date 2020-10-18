@@ -1,10 +1,18 @@
-import app from './app';
-import renderVueComponentToString from 'vue-server-renderer/basic';
+// import { createApp } from './app';
+// import renderVueComponentToString from 'vue-server-renderer/basic';
+//
+// renderVueComponentToString(createApp(), (err, res) => {
+//     if (err) {
+//         throw new Error(err);
+//     }
+//
+//     // dispatch(html);
+//     print(res);
+// });
 
-renderVueComponentToString(app, (err, html) => {
-    if (err) {
-        throw new Error(err);
-    }
+import app from './app'
 
-    dispatch(html);
+
+renderVueComponentToString(app, (err, res) => {
+    print(res);
 });

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
+use App\Http\Controllers\AppController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +15,11 @@ use Illuminate\Support\Facades\Storage;
 |
 */
 
-Route::get('/', function () {
-//    return view('welcome');
-    return view('index');
-//
-//    return Storage::get('index.html');
-});
+//Route::get('/', function () {
+////    return view('welcome');
+//    return view('index');
+////
+////    return Storage::get('index.html');
+//});
+
+Route::get('/', [AppController::class, 'get']);

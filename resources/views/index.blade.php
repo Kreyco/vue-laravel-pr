@@ -8,6 +8,7 @@
 </head>
 <body>
 <div id="app"></div>
+{!! $ssr !!}
 <script src="{{ asset('js/app-client.js') }}" type="text/javascript"></script>
 </body>
 </html>
