@@ -30,4 +30,8 @@ EOT;
         $ssr = $this->render();
         return view('index', ['ssr' => $ssr]);
     }
+
+    public function serve() {
+        Storage::disk('local_public')->get('index.html');
+    }
 }

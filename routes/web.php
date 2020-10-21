@@ -22,4 +22,4 @@ use App\Http\Controllers\AppController;
 ////    return Storage::get('index.html');
 //});
 
-Route::get('/', [AppController::class, 'get']);
+Route::get('/', [AppController::class, 'serve']);
